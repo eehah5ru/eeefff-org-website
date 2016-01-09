@@ -1,3 +1,4 @@
 /static/js/vendor/jquery.js
 /site
 /node_modules
+/.database
