@@ -1,0 +1,20 @@
+:site-name
+eeefff.org
+
+:site-name lang=ru
+еееффф.орг
+
+:teaser-text lang=en
+EEEFFF.ORG
+
+:teaser-text lang=ru
+ЕЕЕФФФ.ОРГ
+
+:languages
+en ru
+
+:commands
+grunt build
+
+:root-cl-environment
+(load #p "hacks.lisp")
