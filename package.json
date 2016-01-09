@@ -1,9 +1,9 @@
 {
-  "name": "foundation-libsass-template",
+  "name": "eeefff-org-website",
   "version": "0.0.1",
   "repository": {
     "type": "git",
-    "url": "https://github.com/zurb/foundation-libsass-template.git"
+    "url": "https://github.com/eehah5ru/eeefff-org-website.git"
   },
   "devDependencies": {
     "grunt": "~0.4.5",
@@ -11,6 +11,7 @@
     "grunt-bowercopy": "^1.2.3",
     "grunt-contrib-watch": "~0.6.1",
     "grunt-modernizr": "^1.0.1",
+    "grunt-modernizr-builder": "^0.1.7",
     "grunt-sass": "1.0.0",
     "node-sass": "3.3.3"
   }
