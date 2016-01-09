@@ -48,11 +48,20 @@ module.exports = function(grunt) {
         },
         files: {
           'vendor/jquery.js': 'jquery/dist/jquery.js',
-          'vendor/modernizr.js': 'modernizr/modernizr.js',
           'vendor/what-input.js': 'what-input/what-input.js'
         }
       }
     },
+
+    modernizr_builder: {
+      build: {
+        options: {
+          config: 'config-modernizr.json',
+          dest: 'static/js/vendor/modernizr.js'
+        }
+      }
+    },
+
 
     watch: {
       grunt: {
@@ -73,7 +82,8 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-bower-concat');
   grunt.loadNpmTasks('grunt-bowercopy');
+  grunt.loadNpmTasks('grunt-modernizr-builder');
 
-  grunt.registerTask('build', ['sass', 'bowercopy', 'bower_concat']);
+  grunt.registerTask('build', ['sass', 'bowercopy', 'bower_concat', 'modernizr_builder']);
   grunt.registerTask('default', ['build','watch']);
 };
