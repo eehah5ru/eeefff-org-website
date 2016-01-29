@@ -6,3 +6,21 @@ EEEFFF.ORG
 
 :template
 main.lisp
+
+:projects-list lang=ru
+$(xml (:h1 (str "AAA")))
+
+
+:projects-list lang=en
+$(xml
+  (let ((links (list (cons "ОБЖ" "http://ooooobj.org")
+                     (cons "ПСИХОДАТА" "http://psychodata.info")
+                     (cons "Кошка-Скаут" "http://cat-scout.eeefff.org"))))
+    (loop for link in links
+          do (htm (:li
+                   (:a :class "aaa" :href (cdr link)
+                       (str (car link))))))))
+
+:cl-environment
+(defun mk-projects-list (list)
+  )

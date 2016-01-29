@@ -10,11 +10,18 @@ EEEFFF.ORG
 :teaser-text lang=ru
 ЕЕЕФФФ.ОРГ
 
+:teaser-ko lang=en
+Nicolay Spesivtsev
+
+:teaser-di lang=en
+Dzina Zhuk
+
+
 :languages
 en ru
 
 :commands
-grunt build
+grunt watch
 
 :root-cl-environment
 (load #p "hacks.lisp")
